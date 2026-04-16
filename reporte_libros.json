@@ -1,0 +1,62 @@
+[
+    {
+        "categoria": "Cocina",
+        "libros": [
+            {
+                "titulo": "Receta de la abuela",
+                "autor": "Karen Maria",
+                "estado": "Disponible"
+            }
+        ]
+    },
+    {
+        "categoria": "Educacion",
+        "libros": [
+            {
+                "titulo": "Salud y Bienestar",
+                "autor": "Lorena Machado",
+                "estado": "Disponible"
+            }
+        ]
+    },
+    {
+        "categoria": "Automovilismo",
+        "libros": [
+            {
+                "titulo": "carros baratos",
+                "autor": "Rodrigo Espinoza",
+                "estado": "Disponible"
+            }
+        ]
+    },
+    {
+        "categoria": "Culinaria",
+        "libros": [
+            {
+                "titulo": "Recetas Caseras",
+                "autor": "Patricia Rodriguez",
+                "estado": "Prestado a Patricia Rodriguez"
+            }
+        ]
+    },
+    {
+        "categoria": "deportes",
+        "libros": [
+            {
+                "titulo": "cucuta deportivo",
+                "autor": "julian rolon",
+                "estado": "Disponible"
+            }
+        ]
+    },
+    {
+        "categoria": "futbol",
+        "libros": [
+            {
+                "titulo": "real madrid",
+                "autor": "Florentino Perez",
+                "estado": "Disponible"
+            }
+        ]
+    }
+]
