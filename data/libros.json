@@ -1,0 +1,61 @@
+[
+    {
+        "titulo": "Receta de la abuela",
+        "autor": "Karen Maria",
+        "genero": "Cocina",
+        "anio_publicacion": 2024,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "Salud y Bienestar",
+        "autor": "Lorena Machado",
+        "genero": "Educacion",
+        "anio_publicacion": 2024,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "carros baratos",
+        "autor": "Rodrigo Espinoza",
+        "genero": "Automovilismo",
+        "anio_publicacion": 2022,
+        "estado": "Disponible",
+        "prestado_a": null,
+        "fecha_prestamo": "2026-04-12 08:23",
+        "fecha_limite": "2026-04-19",
+        "reservado_por": "Julian Rolon"
+    },
+    {
+        "titulo": "Recetas Caseras",
+        "autor": "Patricia Rodriguez",
+        "genero": "Culinaria",
+        "anio_publicacion": 2017,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "cucuta deportivo",
+        "autor": "julian rolon",
+        "genero": "deportes",
+        "anio_publicacion": 2026,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "real madrid",
+        "autor": "Florentino Perez",
+        "genero": "futbol",
+        "anio_publicacion": 2015,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "",
+        "autor": "Julian Rolon",
+        "genero": "motor",
+        "anio_publicacion": 2020,
+        "estado": "Disponible",
+        "prestado_a": null
+    }
+]

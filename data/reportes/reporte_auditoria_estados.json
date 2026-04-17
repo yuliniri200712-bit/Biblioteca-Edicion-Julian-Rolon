@@ -1,0 +1,12 @@
+{
+    "resumen": {
+        "total_revisados": 7,
+        "total_inconsistencias": 0,
+        "conteo_por_tipo": {
+            "ESTADO_INVALIDO": 0,
+            "PRESTADO_SIN_USUARIO": 0,
+            "DISPONIBLE_CON_USUARIO": 0
+        }
+    },
+    "detalles": []
+}

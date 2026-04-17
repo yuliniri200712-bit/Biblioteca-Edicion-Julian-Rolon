@@ -12,7 +12,7 @@ def menu():
         print("1. Registrar un nuevo libro")
         print("2. Ver el inventario de libros")
         print("3. Buscar un libro")
-        print("4. Prestar un libro (Básico)")
+        print("4. Prestar un libro")
         print("5. Devolver un libro")
         print("6. Generar un reporte del inventario")
         print("7. Auditoría de consistencia")
