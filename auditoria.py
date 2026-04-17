@@ -1,8 +1,8 @@
 import json
 import os
 from gestion_libros import cargar_libros
-
-REPORT_PATH = "data/reportes/reporte_auditoria_estados.json"
+import config
+REPORT_PATH = config.ruta_absoluta/"data/reportes/reporte_auditoria_estados.json"
 
 def asegurar_ruta_reporte():
     if not os.path.exists("data/reportes"):

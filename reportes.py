@@ -1,9 +1,9 @@
 import json
 import os
 from gestion_libros import cargar_libros
+import config
+REPORTE_DIR = config.ruta_absoluta/"data/reportes/reporte_libros.json"
 
-REPORTE_DIR = "data/reportes"
-REPORTE_PATH = os.path.join(REPORTE_DIR, "reporte_libros.json")
 
 def generar_reporte():
     libros = cargar_libros()
@@ -27,7 +27,7 @@ def generar_reporte():
 
     reporte_final = [{"categoria": k, "libros": v} for k, v in reporte_dict.items()]
 
-    with open(REPORTE_PATH, "w") as f:
+    with open(REPORTE_DIR, "w") as f:
         json.dump(reporte_final, f, indent=4)
 
     print("\n" + "="*40)

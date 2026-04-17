@@ -1,10 +1,10 @@
 import json
-import config
+import os
 from datetime import datetime, timedelta
 from gestion_libros import cargar_libros, guardar_libros
+import config
 
-
-ESTADISTICAS_PATH = config"data/reportes/estadisticas.csv"
+ESTADISTICAS_PATH = config.ruta_absoluta/"data/reportes/estadisticas.csv"
 
 def prestar_con_fecha():
     """Versión mejorada de préstamo que incluye fecha de devolución."""
@@ -15,7 +15,7 @@ def prestar_con_fecha():
         if libro['titulo'].lower() == titulo.lower():
             if libro['estado'] == "Disponible":
                 usuario = input("Nombre del usuario: ")
-                
+                # Calculamos 7 días para la devolución
                 fecha_hoy = datetime.now()
                 fecha_entrega = fecha_hoy + timedelta(days=7)
                 
@@ -57,7 +57,7 @@ def reservar_libro():
             if libro['estado'] == "Prestado":
                 usuario = input("Ingrese su nombre para la reserva: ")
                 
-               
+                # Añadimos el campo 'reserva' si no existe
                 libro['reservado_por'] = usuario
                 guardar_libros(libros)
                 

@@ -1,7 +1,7 @@
 import json
 import os
-
-DATA_PATH = "data/libros.json"
+import config
+DATA_PATH = config.ruta_absoluta/"data/libros.json"
 
 def asegurar_ruta():
     if not os.path.exists("data"):
