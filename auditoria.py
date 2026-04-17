@@ -11,16 +11,11 @@ ESTADOS_VALIDOS = {"Disponible", "Prestado"}
 
 
 def asegurar_ruta_reporte():
-    """Crea el directorio de reportes usando la ruta absoluta del proyecto."""
     os.makedirs(REPORTES_DIR, exist_ok=True)
 
 
 def _normalizar_estado(estado):
-    """
-    Intenta reconocer un estado escrito de forma incorrecta (ej: 'disponible',
-    'PRESTADO', 'Prestado ', etc.) para dar un mensaje de error más claro.
-    Devuelve el valor tal como está en el JSON; no lo corrige.
-    """
+  
     if estado is None:
         return None
     mapa = {e.lower(): e for e in ESTADOS_VALIDOS}
@@ -28,10 +23,7 @@ def _normalizar_estado(estado):
 
 
 def _validar_libro(libro):
-    """
-    Valida un libro y devuelve una lista de inconsistencias encontradas.
-    Un libro puede tener más de una inconsistencia simultáneamente.
-    """
+   
     errores = []
     estado_raw = libro.get("estado")
     usuario = libro.get("prestado_a")
@@ -58,10 +50,7 @@ def _validar_libro(libro):
 
 
 def auditoria_estados():
-    """
-    Lee libros.json, detecta inconsistencias y genera
-    data/reportes/reporte_auditoria_estados.json sin modificar el inventario.
-    """
+    
     libros = cargar_libros()
 
     inconsistencias = []
