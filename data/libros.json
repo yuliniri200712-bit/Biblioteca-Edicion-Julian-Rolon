@@ -36,7 +36,7 @@
     },
     {
         "titulo": "cucuta deportivo",
-        "autor": "julian rolon",
+        "autor": "Julian Rolon",
         "genero": "deportes",
         "anio_publicacion": 2026,
         "estado": "Disponible",
@@ -57,5 +57,21 @@
         "anio_publicacion": 2020,
         "estado": "Disponible",
         "prestado_a": null
+    },
+    {
+        "titulo": "calo",
+        "autor": "na",
+        "genero": "na",
+        "anio_publicacion": 2020,
+        "estado": "Disponible",
+        "prestado_a": null
+    },
+    {
+        "titulo": "monaco",
+        "autor": "",
+        "genero": "punta",
+        "anio_publicacion": 2023,
+        "estado": "Prestado",
+        "prestado_a": ""
     }
 ]

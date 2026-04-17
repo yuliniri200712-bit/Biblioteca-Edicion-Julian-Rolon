@@ -1,12 +1,20 @@
 {
     "resumen": {
-        "total_revisados": 7,
-        "total_inconsistencias": 0,
+        "total_revisados": 9,
+        "total_inconsistencias": 1,
         "conteo_por_tipo": {
             "ESTADO_INVALIDO": 0,
-            "PRESTADO_SIN_USUARIO": 0,
+            "PRESTADO_SIN_USUARIO": 1,
             "DISPONIBLE_CON_USUARIO": 0
         }
     },
-    "detalles": []
+    "detalles": [
+        {
+            "titulo": "monaco",
+            "autor": "",
+            "estado": "Prestado",
+            "prestado_a": "",
+            "tipo_inconsistencia": "PRESTADO_SIN_USUARIO"
+        }
+    ]
 }

@@ -68,5 +68,15 @@
                 "estado": "Disponible"
             }
         ]
+    },
+    {
+        "categoria": "na",
+        "libros": [
+            {
+                "titulo": "calo",
+                "autor": "na",
+                "estado": "Disponible"
+            }
+        ]
     }
 ]
