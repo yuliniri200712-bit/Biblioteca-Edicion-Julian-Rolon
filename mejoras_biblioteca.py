@@ -7,7 +7,7 @@ import config
 ESTADISTICAS_PATH = config.ruta_absoluta/"data/reportes/estadisticas.csv"
 
 def prestar_con_fecha():
-    """Versión mejorada de préstamo que incluye fecha de devolución."""
+    
     libros = cargar_libros()
     titulo = input("\nIngrese el título del libro: ")
     
@@ -15,7 +15,7 @@ def prestar_con_fecha():
         if libro['titulo'].lower() == titulo.lower():
             if libro['estado'] == "Disponible":
                 usuario = input("Nombre del usuario: ")
-                # Calculamos 7 días para la devolución
+                
                 fecha_hoy = datetime.now()
                 fecha_entrega = fecha_hoy + timedelta(days=7)
                 
@@ -32,7 +32,7 @@ def prestar_con_fecha():
     print("\nLibro no encontrado.")
 
 def ver_estadisticas():
-    """Muestra un resumen rápido del inventario."""
+    
     libros = cargar_libros()
     if not libros:
         return print("No hay libros registrados.")
@@ -48,7 +48,7 @@ def ver_estadisticas():
     print("="*30)
 
 def reservar_libro():
-    """Permite poner un libro en reserva si ya está prestado."""
+    
     libros = cargar_libros()
     titulo = input("\nIngrese el título del libro que desea reservar: ")
     
